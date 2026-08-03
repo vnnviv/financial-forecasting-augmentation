@@ -4,11 +4,11 @@
 
 ---
 
-## What is this?
+## My Story
 
-This repo contains the code for my two-part research project on synthetic data augmentation for financial time series forecasting. I started this project my freshman year after finding a Black-Scholes paper on Wall Street Oasis during AP CS — it completely changed how I thought about markets. Three years later this is what came out of it.
+This repo contains the code for my two-part research project on synthetic data augmentation for financial time series forecasting. I started this project my freshman year after finding a Black-Scholes paper on Wall Street Oasis; it completely changed how I thought about markets. Three years later, this is what came out of it.
 
-The short version of what I found: every paper in this space reporting 99% accuracy is probably wrong, and I can prove it. Part 1 reproduced those inflated results. Part 2 diagnoses why they happened and fixes the methodology.
+The short version of what I found: every paper in this space reporting 99% accuracy is probably wrong, and I can prove it. Part 1 reproduces those inflated results. Part 2 diagnoses why they happened and fixes the methodology.
 
 ---
 
