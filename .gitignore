@@ -1,0 +1,26 @@
+# data files — pulled via yfinance at runtime
+data/*.csv
+data/*.parquet
+
+# model checkpoints
+*.pth
+*.pt
+/tmp/
+
+# python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# jupyter
+.jupyter/
+
+# environment
+.env
+venv/
+.venv/
+
+# system
+.DS_Store
+Thumbs.db
