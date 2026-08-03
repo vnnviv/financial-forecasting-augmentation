@@ -1,6 +1,5 @@
 # Stock Price Prediction Using Synthetic Data Augmentation
 
-**Vivian Chan** | Glen A. Wilson High School | 2026  
 **Mentors:** Mohammad Husain & Antoine Si | Cal Poly Pomona PolySec Lab
 
 ---
