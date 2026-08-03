@@ -72,10 +72,10 @@ financial-forecasting-augmentation/
 
 | Asset | Persistence R² | Confirms AIE? |
 |-------|---------------|---------------|
-| AAPL | 0.9452 | ✅ |
-| MSFT | 0.9574 | ✅ |
-| GOOGL | 0.9455 | ✅ |
-| BTC-USD | 0.9844 | ✅ (strongest) |
+| AAPL | 0.9452 | Yes |
+| MSFT | 0.9574 | Yes |
+| GOOGL | 0.9455 | Yes |
+| BTC-USD | 0.9844 | Yes (strongest) |
 
 **Baseline LSTM under honest evaluation:**
 
