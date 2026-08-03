@@ -5,7 +5,7 @@
 
 ---
 
-## What this is
+## What is this?
 
 This repo contains the code for my two-part research project on synthetic data augmentation for financial time series forecasting. I started this project my freshman year after finding a Black-Scholes paper on Wall Street Oasis during AP CS — it completely changed how I thought about markets. Three years later this is what came out of it.
 
@@ -13,7 +13,7 @@ The short version of what I found: every paper in this space reporting 99% accur
 
 ---
 
-## The core problem
+## Core Problem
 
 If you train an LSTM on stock prices and test it with a random train/test split, you'll get R² > 0.99 and directional accuracy > 94%. Looks incredible. The issue is that a **zero-parameter persistence model** (just predict tomorrow = today) also gets R² > 0.95 on the same data. That's not your model being smart — that's autocorrelation inflating every metric in the benchmark.
 
@@ -29,7 +29,7 @@ Across all model configurations in my experiments, the average LIR for direction
 
 ---
 
-## Novel contributions
+## Novel Contributions
 
 1. **Autocorrelation Inflation Effect (AIE)** — formal definition + mathematical proof that price-level R² is invalid as a financial ML benchmark
 2. **Leakage Inflation Ratio (LIR)** — first standardized metric for quantifying evaluation inflation across published studies  
@@ -38,7 +38,7 @@ Across all model configurations in my experiments, the average LIR for direction
 
 ---
 
-## Repo structure
+## Repo Structure
 
 ```
 financial-forecasting-augmentation/
@@ -66,7 +66,7 @@ financial-forecasting-augmentation/
 
 ---
 
-## Results so far (Day 1)
+## Incoming Results (Day 1)
 
 **AIE confirmed on all 4 assets:**
 
@@ -102,7 +102,7 @@ Then run on Kaggle (GPU T4 recommended) or Google Colab. yfinance pulls data aut
 
 ---
 
-## How to run
+## How to Run
 
 ```bash
 # Day 1 baseline experiment
@@ -115,7 +115,7 @@ Expected runtime on GPU T4: ~3-4 minutes for all 4 assets × 5 trials.
 
 ---
 
-## Tech stack
+## Applcations
 
 - **PyTorch** — LSTM + QLSTM models
 - **PennyLane** — quantum circuit simulation
