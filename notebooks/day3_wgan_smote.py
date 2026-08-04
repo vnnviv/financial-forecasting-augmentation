@@ -1,37 +1,4 @@
-# day3_wgan_smote.py
-#
-# Part 2, Day 3 — WGAN-GP + SMOTE-TS augmentation
-# Vivian Chan | Glen A. Wilson High School | 2026
-# Mentors: Mohammad Husain & Antoine Si | Cal Poly Pomona
-#
-# What this notebook does:
-#   - WGAN-GP: trains an unconditional generator (noise -> return window)
-#     against a Wasserstein critic with a gradient penalty, once per asset.
-#     Gradient-clipped on both sides -- WGAN-GP is notorious for NaN blowups,
-#     this is the fix for that.
-#   - SMOTE-TS: no training at all. For each synthetic example, picks a
-#     real training sequence, finds one of its k nearest real neighbors
-#     (Euclidean distance in flattened feature space), and interpolates
-#     between them at a random ratio. This IS the SMOTE method -- there's
-#     no separate "recompute features from scratch" step here like there
-#     is for CycleGAN/WGAN-GP, because SMOTE-TS never leaves feature
-#     space to begin with. It only ever touches real feature vectors.
-#   - Both methods augment the real training set the same way Day 2 did:
-#     validation and test stay 100% real, only train gets synthetic rows.
-#   - Compares both methods' DA against the Day 1 baseline (and against
-#     Day 2's CycleGAN result, if that CSV is sitting in the working
-#     directory too).
-#
-# My plan's own expectation going in: WGAN-GP likely degrades performance
-# (saw this on AAPL earlier), SMOTE-TS is modest degradation or flat.
-# Running them anyway is the point -- showing what doesn't work is half
-# the paper's contribution, not a detour from it.
-#
-# Run this on Kaggle with GPU T4. Expected time: ~3-4 hours for 4 assets
-# x 2 methods x 5 trials (WGAN-GP training is the expensive part; SMOTE-TS
-# is CPU-fast once the neighbor table is built).
-
-
+temping
 # ── imports ───────────────────────────────────────────────────────────────────
 
 import os
