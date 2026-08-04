@@ -1,39 +1,3 @@
-# day2_augmentation.py
-#
-# Part 2, Day 2 — CycleGAN augmentation
-# Vivian Chan | Glen A. Wilson High School | 2026
-# Mentors: Mohammad Husain & Antoine Si | Cal Poly Pomona
-#
-# What this notebook does:
-#   - For each asset, block-bootstraps a naive synthetic return series from
-#     the real training returns (domain B — keeps short-run structure
-#     within each block, destroys everything beyond it)
-#   - Trains a CycleGAN between domain A (real return windows) and domain B
-#     (bootstrap windows), once per asset
-#   - Uses the trained G_BA generator to refine fresh bootstrap draws into
-#     more realistic synthetic return windows
-#   - Reconstructs full synthetic price paths from those returns and
-#     recomputes all 8 features from scratch on the synthetic prices --
-#     never copies a real feature value onto a synthetic row, that's a
-#     leakage channel
-#   - Augments the real training set with these synthetic sequences
-#   - Trains the same LSTM architecture from Day 1 on real+synthetic,
-#     validating on real validation data only
-#   - Evaluates only on the real held-out test set -- synthetic data never
-#     touches val or test
-#   - Compares augmented DA against the Day 1 baseline DA for the same
-#     asset (loaded from results/day1_baseline.csv)
-#
-# Integrity rule (same as Day 1): synthetic data never touches the test
-# set, and never touches the validation set either. Run this after
-# day1_baseline.py -- it reads results/day1_baseline.csv for the baseline
-# comparison. If that file isn't there yet, this still runs, it just
-# skips the delta/t-test columns.
-#
-# Run this on Kaggle with GPU T4. Expected time: ~60 min/asset for the
-# CycleGAN + a few minutes per trial for the LSTM runs -- roughly 4-5
-# hours total for 4 assets x 5 trials.
-
 
 # ── imports ───────────────────────────────────────────────────────────────────
 
