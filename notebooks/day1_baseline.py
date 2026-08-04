@@ -1,22 +1,4 @@
-# day1_baseline.py
-#
-# Part 2, Day 1 — baseline LSTM on all 4 assets
-# Vivian Chan | Glen A. Wilson High School | 2026
-# Mentors: Mohammad Husain & Antoine Si | Cal Poly Pomona
-#
-# What this notebook does:
-#   - Downloads AAPL, MSFT, GOOGL, BTC-USD from Yahoo Finance (2020-2023)
-#   - Runs a baseline LSTM with proper temporal splitting
-#   - Proves the Autocorrelation Inflation Effect on all 4 assets
-#   - Computes the Leakage Inflation Ratio against Part 1 results
-#   - 5 trials per asset for statistical validity
-#
-# Run this on Kaggle with GPU T4. Expected time: 3-4 minutes.
-# All outputs saved to /kaggle/working/results/
-#
-# This is Part 2 of my research. Part 1 found R² > 0.99 using random
-# train-test splits. This notebook shows that was entirely leakage.
-# A zero-parameter model gets R² > 0.95 on the same data.
+tempering
 
 
 # ── imports ───────────────────────────────────────────────────────────────────
