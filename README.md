@@ -77,7 +77,7 @@ financial-forecasting-augmentation/
 
 ---
 
-## setup
+## Setup
 
 ```bash
 git clone https://github.com/vnnviv/financial-forecasting-augmentation
