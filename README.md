@@ -3,12 +3,12 @@
 **Mentors:** Mohammad Husain & Antoine Si | Cal Poly Pomona PolySec Lab
 
 ---
-# story 
+# Story 
  Every paper in this space reporting 99% accuracy is probably wrong, and I will prove it, Phase 1 reproduces those inflated results, while Part 2 diagnoses why they happened and fixes the methodology.
 
 ---
 
-## Core problem
+## Core Problem
 
 if you train an LSTM on stock prices and test it with a random train/test split, you get R² > 0.99 and directional accuracy > 94%. looks incredible. the issue is that a zero-parameter persistence model (predict tomorrow = today) also gets R² > 0.95 on the same data. that's not your model being smart, that's autocorrelation inflating every metric in the benchmark.
 
@@ -109,12 +109,11 @@ PyTorch, PennyLane, yfinance, scikit-learn, Kaggle T4 GPU
 
 ## Paper 
 
-working toward arXiv submission (q-fin.ST). draft in progress.
+Working toward arXiv submission (q-fin.ST). draft in progress.
 
 *Diagnosing Evaluation Artifacts in Synthetic Data-Augmented Financial Forecasting: The Autocorrelation Inflation Effect and Leakage Inflation Ratio*
 
 ---
 
 ## Huge Acknowledgments
-
-thank you to Professor Mohammad Husain and Antoine Si at the Cal Poly Pomona PolySec Lab for mentoring this research. presented Part 1 at SCCUR 2025.
+Thank you to Professor Mohammad Husain and Antoine Si at the Cal Poly Pomona PolySec Lab for mentoring this research. Presented Part 1 at SCCUR 2025.
