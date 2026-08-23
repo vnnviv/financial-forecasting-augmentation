@@ -1,9 +1,5 @@
 # day4_statistical_validation.py
 #
-# Part 2, Day 4 — statistical validation
-# Vivian Chan | Glen A. Wilson High School | 2026
-# Mentors: Mohammad Husain & Antoine Si | Cal Poly Pomona
-#
 # What this notebook does:
 #   - Upgrades every condition from 5 trials to 10 -- baseline (real only),
 #     CycleGAN, WGAN-GP, and SMOTE-TS, all four re-run here with matching
