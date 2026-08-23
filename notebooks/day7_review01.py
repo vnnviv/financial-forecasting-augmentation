@@ -1,9 +1,5 @@
 # day7_review.py
 #
-# Part 2, Day 7 — review + buffer
-# Vivian Chan | Glen A. Wilson High School | 2026
-# Mentors: Mohammad Husain & Antoine Si | Cal Poly Pomona
-#
 # This is NOT a training script. My plan is explicit that Day 7 has no
 # new model to run -- it's the audit day: check everything Days 1-6
 # produced is consistent, build one master results table out of the six
