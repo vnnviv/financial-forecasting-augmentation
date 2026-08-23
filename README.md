@@ -1,6 +1,5 @@
-# financial-forecasting-augmentation
+# Financial-Forecasting-Augmentation
 
-**Mentors:** Mohammad Husain & Antoine Si | Cal Poly Pomona PolySec Lab
 
 ---
 # Story 
