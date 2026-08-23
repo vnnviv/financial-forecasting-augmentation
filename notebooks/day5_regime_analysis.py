@@ -1,9 +1,5 @@
 # day5_regime_analysis.py
 #
-# Part 2, Day 5 — regime-conditional analysis (RCAH)
-# Vivian Chan | Glen A. Wilson High School | 2026
-# Mentors: Mohammad Husain & Antoine Si | Cal Poly Pomona
-#
 # What this notebook does:
 #   - Splits each asset's history into 3 regimes: COVID_Crash (Jan-Mar
 #     2020), Recovery (Apr 2020 - Dec 2021), Rate_Hike (Jan 2022 - Dec
