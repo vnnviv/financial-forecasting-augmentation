@@ -1,13 +1,11 @@
 # figures.py
-# Vivian Chan | Glen A. Wilson High School | 2026
-# Mentors: Mohammad Husain & Antoine Si | Cal Poly Pomona
 #
 # Generates all figures for:
 # "Hybrid Quantitative ML Model for Financial Time Series Forecasting:
 #  A Two-Phase Empirical Diagnosis of Data Leakage and Metric Misuse"
 #
-# Run on Kaggle or Google Colab. No GPU needed.
-# !pip install matplotlib numpy scipy
+# Run on Kaggle or Google Colab. 
+#!pip install matplotlib numpy scipy
 
 import numpy as np
 import matplotlib
@@ -23,7 +21,7 @@ warnings.filterwarnings('ignore')
 # output folder
 os.makedirs('figures', exist_ok=True)
 
-# ── shared style ──────────────────────────────────────────────────────────────
+# shared style 
 PURPLE   = '#5B2D8E'
 LAVENDER = '#A78BC5'
 GREEN    = '#2ECC71'
@@ -41,7 +39,7 @@ plt.rcParams.update({
     'figure.facecolor':   'white',
 })
 
-# ── real experimental results ─────────────────────────────────────────────────
+# real experimental results 
 
 # Phase 1 results (Table 1 in paper — random split, price-level R²)
 P1 = {
@@ -98,10 +96,8 @@ QA = {
     'p1_classic_r2':   0.992,
 }
 
-
-# ════════════════════════════════════════════════════════════════════════════
 # FIGURE 1 — AIE Proof: Persistence Baseline vs. LSTM across assets
-# ════════════════════════════════════════════════════════════════════════════
+
 def figure1_aie():
     fig, axes = plt.subplots(2, 2, figsize=(12, 9))
     fig.suptitle(
@@ -165,9 +161,8 @@ def figure1_aie():
     print('saved: figures/fig1_aie.png')
 
 
-# ════════════════════════════════════════════════════════════════════════════
 # FIGURE 2 — Leakage Inflation Ratio
-# ════════════════════════════════════════════════════════════════════════════
+
 def figure2_lir():
     fig, axes = plt.subplots(1, 2, figsize=(13, 5))
     fig.suptitle(
@@ -237,9 +232,8 @@ def figure2_lir():
     print('saved: figures/fig2_lir.png')
 
 
-# ════════════════════════════════════════════════════════════════════════════
 # FIGURE 3 — 3D DA surface: augmentation method × asset
-# ════════════════════════════════════════════════════════════════════════════
+
 def figure3_3d_surface():
     fig = plt.figure(figsize=(13, 7))
     ax  = fig.add_subplot(111, projection='3d')
@@ -315,9 +309,8 @@ def figure3_3d_surface():
     print('saved: figures/fig3_3d_surface.png')
 
 
-# ════════════════════════════════════════════════════════════════════════════
 # FIGURE 4 — RCAH scatter + regime heatmap
-# ════════════════════════════════════════════════════════════════════════════
+
 def figure4_rcah():
     fig, axes = plt.subplots(1, 2, figsize=(13, 5))
     fig.suptitle(
@@ -391,10 +384,8 @@ def figure4_rcah():
     plt.close()
     print('saved: figures/fig4_rcah.png')
 
-
-# ════════════════════════════════════════════════════════════════════════════
 # FIGURE 5 — Quantum ablation: DA comparison + R² collapse
-# ════════════════════════════════════════════════════════════════════════════
+
 def figure5_quantum():
     fig, axes = plt.subplots(1, 2, figsize=(11, 5))
     fig.suptitle(
@@ -472,10 +463,7 @@ def figure5_quantum():
     plt.close()
     print('saved: figures/fig5_quantum.png')
 
-
-# ════════════════════════════════════════════════════════════════════════════
 # FIGURE 6 — 3D LIR surface (most visually advanced)
-# ════════════════════════════════════════════════════════════════════════════
 def figure6_3d_lir():
     fig = plt.figure(figsize=(12, 7))
     ax  = fig.add_subplot(111, projection='3d')
@@ -533,10 +521,7 @@ def figure6_3d_lir():
     plt.close()
     print('saved: figures/fig6_3d_lir.png')
 
-
-# ════════════════════════════════════════════════════════════════════════════
 # RUN ALL
-# ════════════════════════════════════════════════════════════════════════════
 if __name__ == '__main__':
     print('Generating figures...\n')
     figure1_aie()
