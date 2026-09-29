@@ -103,16 +103,3 @@ expected runtime: ~3-4 minutes for 4 assets x 5 trials on T4.
 ![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=flat-square&logo=kaggle&logoColor=white)
 
 PyTorch, PennyLane, yfinance, scikit-learn, Kaggle T4 GPU
-
----
-
-## Paper 
-
-Working toward arXiv submission (q-fin.ST). draft in progress.
-
-*Diagnosing Evaluation Artifacts in Synthetic Data-Augmented Financial Forecasting: The Autocorrelation Inflation Effect and Leakage Inflation Ratio*
-
----
-
-## Huge Acknowledgments
-Thank you to Professor Mohammad Husain and Antoine Si at the Cal Poly Pomona PolySec Lab for mentoring this research. Presented Part 1 at SCCUR 2025.
