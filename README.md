@@ -1,8 +1,4 @@
 # Financial-Forecasting-Augmentation
-
-
----
-# Story 
  Every paper in this space reporting 99% accuracy is probably wrong, and I will prove it, Phase 1 reproduces those inflated results, while Part 2 diagnoses why they happened and fixes the methodology.
 
 ---
